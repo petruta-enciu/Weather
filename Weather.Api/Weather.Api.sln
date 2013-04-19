@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "Weather.Api\Weather.Api.csproj", "{BABA651C-8C86-4A33-A9CB-15992EA80DC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "Weather.Api\Weather.Api.csproj", "{864B0A0B-A189-4156-B6C8-9092B437C8CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BABA651C-8C86-4A33-A9CB-15992EA80DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BABA651C-8C86-4A33-A9CB-15992EA80DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BABA651C-8C86-4A33-A9CB-15992EA80DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BABA651C-8C86-4A33-A9CB-15992EA80DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
