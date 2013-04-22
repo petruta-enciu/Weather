@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "Weather.Api\Weather.Api.csproj", "{864B0A0B-A189-4156-B6C8-9092B437C8CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api.Tests", "Weather.Api.Tests\Weather.Api.Tests.csproj", "{7D1E5FD9-0230-44FB-BB08-200FEB7C1DEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{965F52CB-D478-4B7D-BFE1-FDA08733A371}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		Weather.Api.vsmdi = Weather.Api.vsmdi
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Weather.Api.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -13,6 +25,10 @@ Global
 		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{864B0A0B-A189-4156-B6C8-9092B437C8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1E5FD9-0230-44FB-BB08-200FEB7C1DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1E5FD9-0230-44FB-BB08-200FEB7C1DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1E5FD9-0230-44FB-BB08-200FEB7C1DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1E5FD9-0230-44FB-BB08-200FEB7C1DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
