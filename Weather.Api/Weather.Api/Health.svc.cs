@@ -16,18 +16,13 @@ namespace Weather.Api
 
         #region IHealth Members
        
-        public string GetHealthXml()
+        public string GetHealth()
         {
             return ("REST SERVICE IS UP  AND  RUNNING");
-
         }
 
 
-        public string GetHealthJson()
-        {
-            return ("REST SERVICE IS UP  AND  RUNNING");
-
-        }
+     
 
      
 
