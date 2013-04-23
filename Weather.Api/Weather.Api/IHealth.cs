@@ -1,21 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
+﻿using System.ComponentModel;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using System.Text;
+
 
 namespace Weather.Api
 {
    
-    [ServiceContract]
+    [ServiceContract (Name = "WebApi",Namespace = "http://moodmedia.com/api")]
     public interface IHealth
     {
-        [OperationContract]
-        [WebInvoke(Method = "GET",UriTemplate = "health")]
-        string GetHealth();
+       [OperationContract ]
+       [Description("Method to  check  status of this service")]
+       [WebInvoke(Method = "GET", UriTemplate = "health")]
+        string HealthStatus();
+
+
+
+
     }
 
 

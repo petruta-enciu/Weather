@@ -10,7 +10,7 @@ namespace Weather.Api.Tests
        public void GetHealth()
         {
             var target = new Health();
-            Assert.AreEqual("REST SERVICE IS UP  AND  RUNNING",target.GetHealth());
+            Assert.AreEqual("REST SERVICE IS UP  AND  RUNNING",target.HealthStatus());
         }
 
       

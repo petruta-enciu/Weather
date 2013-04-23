@@ -7,7 +7,7 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
-
+[assembly: CLSCompliant(true)]
 namespace Weather.Api
 {
      [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
@@ -16,7 +16,7 @@ namespace Weather.Api
 
         #region IHealth Members
        
-        public string GetHealth()
+        public string HealthStatus()
         {
             return ("REST SERVICE IS UP  AND  RUNNING");
         }
