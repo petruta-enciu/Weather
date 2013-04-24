@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="https://192.168.26.103:8172/msDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="moodmedia/weather" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="WebPublish" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="Administrator" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1OY+5cBvYk6crz13sIpjrwAAAAACAAAAAAAQZgAAAAEAACAAAACKuZJbsCtp4Z8ycG4Ie6TsdMO1cuXlfapxuN8EjX6YKAAAAAAOgAAAAAIAACAAAABepaA85KCm0s968bqqsaMj3qtX8d/KBPaLOAT6iEBQbCAAAABl+XQG70gvoR02rCxj5MDgk7XgVKVqwQYKvZLF0vwAUEAAAAAV+Tw3EevD6YZ6arQ2M2GJ9lhgA/+Pf0nrLwR+0zBmjxgW53Xk0fEhYuVq1Wod0cRLWSJ/IrDe1FCeRNTBRQLg" SelectedForPublish="True" />
+</publishData>

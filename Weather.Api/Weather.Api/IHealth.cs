@@ -14,9 +14,6 @@ namespace Weather.Api
        [WebInvoke(Method = "GET", UriTemplate = "health")]
         string HealthStatus();
 
-
-
-
     }
 
 

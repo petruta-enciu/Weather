@@ -20,12 +20,6 @@ namespace Weather.Api
         {
             return ("REST SERVICE IS UP  AND  RUNNING");
         }
-
-
-     
-
-     
-
         #endregion
     }
 }

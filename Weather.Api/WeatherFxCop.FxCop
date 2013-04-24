@@ -22,9 +22,10 @@
  </ProjectOptions>
  <Targets>
   <AssemblyReferenceDirectories>
+   <Directory>$(ProjectDir)/Weather.Api/bin/</Directory>
    <Directory>$(ProjectDir)/Weather.Api/Weather.Api/bin/</Directory>
   </AssemblyReferenceDirectories>
-  <Target Name="$(ProjectDir)/Weather.Api/bin/Weather.Api.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/Weather.Api/obj/Release/Weather.Api.dll" Analyze="True" AnalyzeAllChildren="True" />
  </Targets>
  <Rules>
   <RuleFiles>
@@ -43,7 +44,7 @@
  </Rules>
  <FxCopReport Version="1.36">
   <Targets>
-   <Target Name="$(ProjectDir)/Weather.Api/bin/Weather.Api.dll">
+   <Target Name="$(ProjectDir)/Weather.Api/obj/Release/Weather.Api.dll">
     <Modules>
      <Module Name="weather.api.dll">
       <Namespaces>
@@ -53,7 +54,7 @@
           <Members>
            <Member Name="#Application_Start(System.Object,System.EventArgs)">
             <Messages>
-             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Status="Excluded" Created="2013-04-22 23:10:33Z">
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Status="Excluded" Created="2013-04-23 09:08:11Z">
               <Issue>
                <Item>'Global.Application_Start(object, EventArgs)'</Item>
               </Issue>

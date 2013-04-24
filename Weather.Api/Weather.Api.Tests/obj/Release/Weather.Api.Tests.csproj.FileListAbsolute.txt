@@ -1,0 +1,10 @@
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.Tests.dll
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.Tests.pdb
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\nunit.framework.dll
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\nunit.mocks.dll
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.dll
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.pdb
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\nunit.framework.xml
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\obj\Release\Weather.Api.Tests.csprojResolveAssemblyReference.cache
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\obj\Release\Weather.Api.Tests.dll
+H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\obj\Release\Weather.Api.Tests.pdb
