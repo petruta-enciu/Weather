@@ -4,13 +4,13 @@ set-executionpolicy remotesigned
 $msbuild = "C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe"
 $msdeploy="C:\Program Files (x86)\IIS\Microsoft Web Deploy\msdeploy.exe"
 $fxcop="C:\Program Files (x86)\Microsoft FxCop 1.36"
-$nunit="C:\Program Files (x86)\NUnit 2.6.1\bin\"
-$ndepends="C:\NDepends\"
+$nunit="C:\Program Files (x86)\NUnit 2.6.2\bin\"
+$ndepends="C:\Program Files\NDepend"
 
 # MS BUILD SETTINGS  
-$baseDir = "H:\WeatherApiGit\Weather.Api\"
-$binDir = "H:\WeatherApiGit\Weather.Api\Weather.Api\bin"
-$objDir="H:\WeatherApiGit\Weather.Api\Weather.Api\obj"
+$baseDir = "C:\Program Files (x86)\Jenkins\jobs\Weather QA - Weather.Api\workspace\Weather.Api"
+$binDir = "C:\Program Files (x86)\Jenkins\jobs\Weather QA - Weather.Api\workspace\Weather.Api\Weather.Api\bin"
+$objDir="C:\Program Files (x86)\Jenkins\jobs\Weather QA - Weather.Api\workspace\Weather.Api\Weather.Api\obj"
 $options = " /p:Configuration=Release"
 # if the output folder exists, delete it
 if (  ([System.IO.Directory]::Exists($binDir)) -or ([System.IO.Directory]::Exists($objDir)) )
@@ -25,10 +25,7 @@ $clean = $msbuild + " ""Weather.Api.sln"" " + $options + " /t:Clean"
 $build = $msbuild + " ""Weather.Api.sln"" " + $options + " /t:Build"
 Invoke-Expression $clean
 Invoke-Expression $build
-$LASTEXITCODE 
-WRITE-TOHOST $LASTEXITCODE 
-BREAK 
-clear
+
 
 #FXCOP STEPS
 cd $fxcop 
@@ -46,17 +43,18 @@ $ndependscommand
 
 #NUNIT Step
 cd $nunit
-$nunitcommand=.\nunit-console.exe H:\WeatherApiGit\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.Tests.dll
+$nunitcommand=.\nunit-console.exe C:\Program Files (x86)\Jenkins\jobs\Weather QA - Weather.Api\workspace\Weather.Api\Weather.Api.Tests\bin\Release\Weather.Api.Tests.dll
 $nunitcommand
 
 #MS DEPLOY PACKAGE
-cd H:\WeatherApiGit\Weather.Api\Weather.Api
+cd C:\Program Files (x86)\Jenkins\jobs\Weather QA - Weather.Api\workspace\Weather.Api\Weather.Api
 $package =$msbuild + " ""Weather.Api.csproj"" " + $options + " /t:Package"
 Invoke-Expression $package
 
 #PUBLISH TO UAT SERVER 
-
-
+$publishparamaeter ="/P:DeployOnBuild=True /P:DeployTarget=MSDeployPublish /P:MsDeployServiceUrl=https://192.168.0.142:8172/MsDeploy.axd /P:AllowUntrustedCertificate=True /P:MSDeployPublishMethod=WMSvc /P:CreatePackageOnPublish=True /P:DeployIisAppPath="Default Web Site/weather" /P:UserName=Administrator /P:Password=K4hvdrq2d3 "
+$publish= $msbuild + " ""Weather.Api.sln"" " + $options + " /t:Build"
+Invoke-Expression $publish
 
 
 
